@@ -1,5 +1,9 @@
-# Empath.ai
-Creating a multimodal chatbot based ML application to enable computers to understand and react to emotions.
+<div align="center">
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhUxhzpydvC3pprVWqxDlMfXNHSmsXg8YIr6sIRt5vff6YAnvnWsik_0piZ-1rjjSH5IBCkSe0xBqaIG-O3olwxV-gjkygo6Mzmujwpyb3_YOCMnn3Vl2JwhP4z2ldTvpZghYdPgKqvLaTON9Dpy5HtCg6y70S1xObc3K3aKy2EuM8HfGxpVLVbsRae" alt="Logo">
+  <h3>Creating a multimodal chatbot based ML application to enable computers to understand and react to emotions.</h3>
+</div>
+
+
 
 ---------------------------------------
 ## Description
