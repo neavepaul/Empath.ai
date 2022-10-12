@@ -1,0 +1,19 @@
+{
+  "name": "faceapi---emotion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -L -e js, html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neave Paul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
