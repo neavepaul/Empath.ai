@@ -1,9 +1,7 @@
 import * as faceapi from 'face-api.js';
 import React, {useState, useEffect} from 'react';
-import { useNavigate } from "react-router-dom";
 
-export default function Video() {
-  const navigate = useNavigate();
+export default function Face() {
   const [emotions,setEmotions] = useState({
     "angry": 0,
     "disgusted": 0,
