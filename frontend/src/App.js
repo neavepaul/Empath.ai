@@ -23,8 +23,7 @@ function App() {
       const MODEL_URL = process.env.PUBLIC_URL + '/models';
 
       Promise.all([
-        faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL),
-        faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL),
+        faceapi.nets.ssdMobilenetv1.loadFromUri(MODEL_URL),
         faceapi.nets.faceRecognitionNet.loadFromUri(MODEL_URL),
         faceapi.nets.faceExpressionNet.loadFromUri(MODEL_URL),
       ]).then(setModelsLoaded(true));
@@ -58,7 +57,7 @@ function App() {
 
         faceapi.matchDimensions(canvasRef.current, displaySize);
 
-        const detections = await faceapi.detectAllFaces(videoRef.current, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions();
+        const detections = await faceapi.detectAllFaces(videoRef.current).withFaceExpressions();
 
         const resizedDetections = faceapi.resizeResults(detections, displaySize);
         const obj = resizedDetections[0]?.expressions;
