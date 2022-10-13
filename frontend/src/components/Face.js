@@ -1,9 +1,7 @@
 import * as faceapi from 'face-api.js';
 import React, {useState, useEffect} from 'react';
-import { useNavigate } from "react-router-dom";
 
-export default function Video() {
-  const navigate = useNavigate();
+export default function Face() {
   const [emotions,setEmotions] = useState({
     "angry": 0,
     "disgusted": 0,
@@ -14,6 +12,7 @@ export default function Video() {
     "surprised": 0})
   const [modelsLoaded, setModelsLoaded] = useState(false);
   const [captureVideo, setCaptureVideo] = useState(false);
+  const [error,setError] = useState(false);
 
   const videoRef = React.useRef();
   const videoHeight = 480;
@@ -63,9 +62,14 @@ export default function Video() {
 
         const resizedDetections = faceapi.resizeResults(detections, displaySize);
         const obj = resizedDetections[0]?.expressions;
-        if(obj.neutral)
+        if(obj?.neutral)
         {
           setEmotions({...obj})
+          setError(false);
+        }
+        else
+        {
+          setError(true);
         }
       }
     }, 2000)
@@ -88,7 +92,20 @@ export default function Video() {
           <>
           </>
       }
-      {JSON.stringify(emotions)}
+      {error? <AlertState/> : 
+      <div>
+      {Object.keys(emotions)[Object.values(emotions).indexOf(Math.max(...(Object.values(emotions))))]}
+      </div>}
     </div>
   );
+}
+
+function AlertState(){
+  return(
+    <>
+      <div className='alert'>
+      Face not detected, ensure you are within range of the camera and not wearing glasses
+      </div>
+    </>
+  )
 }
