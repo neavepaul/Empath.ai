@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+::-webkit-scrollbar {display:none;}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: #171518;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  padding-top: 2vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 12vh;
+  font-family: "Poppins";
   color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  list-style-type: none;
+  text-emphasis: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sign-in-btn {
+  background: #171518;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  width: 13vw;
+  height: 9vh;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blue-text {
+  color: #4285f4;
+  font-family: "Poppins";
+}
+
+a:hover {
+  color: #4285f4;
+  text-decoration: underline;
+}
+
+.sign-in-btn:hover{
+  background-color: #4285f4;
+  color: white;
+  border: 1px solid #4285f4;
+  cursor: pointer;
+}
+
+.home-screen {
+  background-color: #171518;
+  max-width: 100vw;
+}
+
+.main-banner {
+  height: auto;
+  width: 100vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 15vh auto;
+  max-width: 93vw;
+}
+
+.main-header {
+  font-family: "Poppins";
+  font-size: 75px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sub-header {
+  margin-top: 8%;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 4%;
+}
+
+.about-us {
+  background-color: #171518;
+  color: #ffffff;
+  text-align: center;
+  width: 100vw;
+  height: 91vh;
+  overflow: hidden;
+  padding-top: 9vh;
+}
+
+.about-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.about-text{
+  margin: 40px 90px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 25px;
 }
