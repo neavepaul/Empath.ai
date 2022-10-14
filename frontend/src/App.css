@@ -54,6 +54,7 @@ a {
 .blue-text {
   color: #4285f4;
   font-family: "Poppins";
+  font-size: 50px;
 }
 
 a:hover {
@@ -137,4 +138,8 @@ a:hover {
 
 .emotion{
   text-transform: capitalize;
+}
+
+.alert{
+  font-size: 30px;
 }
