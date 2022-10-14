@@ -7,6 +7,7 @@
   padding: 0;
   overflow-x: hidden;
   color: white;
+  scroll-behavior:smooth;
 }
 
 .screen {
@@ -48,6 +49,10 @@ a {
   height: 9vh;
   font-size: 20px;
   font-weight: 400;
+}
+
+.small{
+  font-size: 50px;
 }
 
 .blue-text {
@@ -122,4 +127,22 @@ a:hover {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 25px;
+}
+
+.emotion-header{
+  font-family: "Poppins";
+  margin-top: 8%;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.emotion{
+  text-transform: capitalize;
+}
+
+.alert{
+  font-size: 30px;
 }
