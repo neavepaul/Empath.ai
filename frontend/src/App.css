@@ -51,10 +51,13 @@ a {
   font-weight: 400;
 }
 
+.small{
+  font-size: 50px;
+}
+
 .blue-text {
   color: #4285f4;
   font-family: "Poppins";
-  font-size: 50px;
 }
 
 a:hover {

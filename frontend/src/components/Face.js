@@ -113,10 +113,10 @@ export default function Face() {
         </div>
       ) : (
         <div className="emotion-header">
-          <div className="emotion">Welcome to <span className="blue-text">Empath</span>  
+          <div className="emotion">Welcome to <span className="blue-texts">Empath</span>  
             {(currentEmotion != 'here') && <><br/>I can see you are</>}
             <br />
-              <span className="blue-text">
+              <span className="blue-text small">
                 {currentEmotion === 'here' ? " Kindly wait, loading the model..." : `${currentEmotion} `}
               </span>
             <EmotionGraphic currentEmotion={currentEmotion}/> 
