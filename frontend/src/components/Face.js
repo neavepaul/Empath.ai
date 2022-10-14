@@ -2,6 +2,7 @@ import * as faceapi from "face-api.js";
 import React, { useState, useEffect } from "react";
 
 export default function Face() {
+  const [currentEmotion,setCurrentEmotion] = useState('here');
   const [emotions, setEmotions] = useState({
     angry: 0,
     disgusted: 0,
@@ -20,7 +21,7 @@ export default function Face() {
   const videoWidth = 640;
   const canvasRef = React.useRef();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const loadModels = async () => {
       const MODEL_URL = process.env.PUBLIC_URL + "/models";
 
@@ -31,9 +32,6 @@ export default function Face() {
       ]).then(setModelsLoaded(true));
     };
     loadModels();
-  }, []);
-
-  useEffect(() => {
     setCaptureVideo(true);
     navigator.mediaDevices
       .getUserMedia({ video: { width: 300 } })
@@ -68,9 +66,15 @@ export default function Face() {
           detections,
           displaySize
         );
+        console.log(resizedDetections);
         const obj = resizedDetections[0]?.expressions;
         if (obj?.neutral) {
           setEmotions({ ...obj });
+          setCurrentEmotion(Object.keys(obj)[
+            Object.values(obj).indexOf(
+              Math.max(...Object.values(obj))
+            )])
+          console.log(obj);
           setError(false);
         } else {
           setError(true);
@@ -101,35 +105,56 @@ export default function Face() {
       ) : (
         <></>
       )}
-      {error ? (
-        <AlertState />
-      ) : (
-        <div className="emotion-header"> 
-          <div className="emotion">Welcome to <span className="blue-text">Empath</span>  
-        <br/>I can see you are: <br /><span className="blue-text">
-            {
-              Object.keys(emotions)[
-                Object.values(emotions).indexOf(
-                  Math.max(...Object.values(emotions))
-                )
-              ]
-            }
-            </span> 
+      {(error) ? (
+        <div className="emotion emotion-header alert">
+          <div style={{"max-width":"40%"}}>
+            {true ? "Face not detected, ensure you are within range of the camera and not wearing glasses 👓" : "Loading..."}
           </div>
-          <img src={require("../assets/happy-bot.jpg")}></img>
         </div>
+      ) : (
+        <div className="emotion-header">
+          <div className="emotion">Welcome to <span className="blue-text">Empath</span>  
+            {(currentEmotion != 'here') && <><br/>I can see you are</>}
+            <br />
+              <span className="blue-text">
+                {currentEmotion === 'here' ? " Kindly wait, loading the model..." : `${currentEmotion} `}
+              </span>
+            <EmotionGraphic currentEmotion={currentEmotion}/> 
+          </div>
+        </div>
+
       )}
     </div>
   );
 }
 
-function AlertState() {
-  return (
-    <>
-      <div className="alert">
-        Face not detected, ensure you are within range of the camera and not
-        wearing glasses
-      </div>
-    </>
-  );
+function EmotionGraphic({currentEmotion}){
+  if(currentEmotion === 'neutral')
+  {
+    return(<>😃</>)
+  }
+  else if(currentEmotion === 'angry')
+  {
+    return(<>😡</>)
+  }
+  else if(currentEmotion === 'happy')
+  {
+    return(<>😊</>)
+  }
+  else if(currentEmotion === 'sad')
+  {
+    return(<>😢</>)
+  }
+  else if(currentEmotion === 'disgusted')
+  {
+    return(<>🤢</>)
+  }
+  else if(currentEmotion === 'fearful')
+  {
+    return(<>😱</>)
+  }
+  else if(currentEmotion === 'suprised')
+  {
+    return(<>😲</>)
+  }
 }
