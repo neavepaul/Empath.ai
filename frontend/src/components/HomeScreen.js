@@ -30,9 +30,9 @@ export default function HomeScreen() {
       <section className="main-banner">
         <div class="grid">
           <div className="main-header">Hi! My name <br/>is <span className="blue-text">Empath</span>.</div>
-          {/* <div class="vanta"> */}
+          
           <Halo/>
-          {/* </div> */}
+          
           <div className="sub-header">A virtual assistant that <br/> <span className="blue-text">cares</span></div>
           <div className="sub-headerbr"></div>
         </div>
@@ -42,11 +42,9 @@ export default function HomeScreen() {
         <div className="about-text">Empath AI is an emotionally intelligent virtual assistant. What we wish to bring to users with this project is a virtual assistant that can not only complete tasks and follow instructions, but also act as a virtual companion who can understand and percieve emotions and act accordingly.</div>
         <img src={require('../assets/siri_wave.png')} width="950" height="250" alt="graphic"/>
       </div>
-      {/* <div className="about-us" id="about">
+      <div className="about-us" id="about">
         <div className="about-header">Our <span className="blue-text">Team</span></div>
-        <div className="about-text">Empath AI is an emotionally intelligent virtual assistant. What we wish to bring to users with this project is a virtual assistant that can not only complete tasks and follow instructions, but also act as a virtual companion who can understand and percieve emotions and act accordingly.</div>
-        <img src={require('../assets/siri_wave.png')} width="950" height="250" alt="graphic"/>
-      </div> */}
+      </div>
     </div>
   );
 }
