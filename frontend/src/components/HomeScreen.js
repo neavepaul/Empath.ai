@@ -34,7 +34,6 @@ export default function HomeScreen() {
           <Halo/>
           
           <div className="sub-header">A virtual assistant that <br/> <span className="blue-text">cares</span></div>
-          {/* <div className="sub-headerbr"></div> */}
         </div>
       </section>
       <div className="about-us" id="about">
