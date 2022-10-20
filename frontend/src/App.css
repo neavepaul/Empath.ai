@@ -105,6 +105,16 @@ a:hover {
   letter-spacing: 4%;
 }
 
+.sub-headerbr {
+  margin-top: 8%;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 4%;
+  visibility: hidden;
+}
+
 .about-us {
   background-color: #171518;
   color: #ffffff;
