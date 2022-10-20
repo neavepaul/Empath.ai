@@ -24,6 +24,6 @@ export default class Halo extends React.Component {
     if (this.vantaEffect) this.vantaEffect.destroy()
   }
   render() {
-    return <div ref={this.vantaRef}></div>
+    return <div ref={this.vantaRef} className="halo-box"></div>
   }
 }

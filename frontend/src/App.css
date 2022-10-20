@@ -105,14 +105,11 @@ a:hover {
   letter-spacing: 4%;
 }
 
-.sub-headerbr {
-  margin-top: 8%;
-  font-family: "Poppins";
-  font-size: 30px;
-  font-weight: 400;
-  color: #ffffff;
-  letter-spacing: 4%;
-  visibility: hidden;
+.halo-box {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .about-us {
