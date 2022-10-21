@@ -74,3 +74,4 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 * [Tensorflow - Transfer learning and fine-tuning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 * [Extended Cohn-Kanade Dataset (CK+)](https://sites.pitt.edu/~jeffcohn/CVPR2010_CK%2B2.pdf)
+---------------------------------------
