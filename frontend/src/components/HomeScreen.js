@@ -73,42 +73,50 @@ export default function HomeScreen() {
           </div>
           <section class="cards">
             <article class="card">
-              <a href="https://www.linkedin.com/in/KyleDsouza02/"  target="_blank">
+              <a
+                href="https://www.linkedin.com/in/KyleDsouza02/"
+                target="_blank"
+              >
                 <img
                   src={require("../assets/kyle.jpeg")}
                   class="cardImg"
                   alt="Vice-Chairperson"
                 />
               </a>
-              <h5>Kyle <span className="blue-text">Dsouza</span></h5>
+              <h5>
+                Kyle <span className="blue-text">Dsouza</span>
+              </h5>
             </article>
             <article class="card">
-              <a href="https://www.linkedin.com/in/KyleDsouza02/" target="_blank">
+              <a href="https://www.linkedin.com/in/neavepaul/" target="_blank">
                 <img
-                  src={require("../assets/kyle.jpeg")}
+                  src={require("../assets/neave1.jpeg")}
                   class="cardImg"
-                  alt="Vice-Chairperson"
+                  alt="Supreme-Leader"
                 />
               </a>
-              <h5>Neave <span className="blue-text">Paul</span></h5>
+              <h5>
+                Neave <span className="blue-text">Paul</span>
+              </h5>
             </article>
             <article class="card">
               <a href="https://www.linkedin.com/in/afieif/" target="_blank">
-                <img
-                  src={require("../assets/afif.jpeg")}
-                  class="cardImg"
-                />
+                <img src={require("../assets/afif.jpeg")} class="cardImg" />
               </a>
-              <h5>Afif <span className="blue-text">Deshmukh</span></h5>
+              <h5>
+                Afif <span className="blue-text">Deshmukh</span>
+              </h5>
             </article>
             <article class="card">
-              <a href="https://www.linkedin.com/in/chinmay-kadam-729990213" target="_blank">
-                <img
-                  src={require("../assets/chinmay.jpeg")}
-                  class="cardImg"
-                />
+              <a
+                href="https://www.linkedin.com/in/chinmay-kadam-729990213"
+                target="_blank"
+              >
+                <img src={require("../assets/chinmay.jpeg")} class="cardImg" />
               </a>
-              <h5>Chinmay <span className="blue-text">Kadam</span></h5>
+              <h5>
+                Chinmay <span className="blue-text">Kadam</span>
+              </h5>
             </article>
           </section>
         </div>
