@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhUxhzpydvC3pprVWqxDlMfXNHSmsXg8YIr6sIRt5vff6YAnvnWsik_0piZ-1rjjSH5IBCkSe0xBqaIG-O3olwxV-gjkygo6Mzmujwpyb3_YOCMnn3Vl2JwhP4z2ldTvpZghYdPgKqvLaTON9Dpy5HtCg6y70S1xObc3K3aKy2EuM8HfGxpVLVbsRae" alt="Logo">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN04PYJonyJ7ixLCafyQ6aMnFaVo7-Q0lic0SzuoeulISD5BVk3VtqyNU4M7yr2wKnyNu2glgwm6FVDhlmMOYtyVbPtiW6PMTe5651PVQUpkDRViwd8LTo1RM_Uh2cwU3QX-Vk0JUGPAFC__wHFsjrQ07k1WWz2fVX66h0bhOa3E53Q62XzL2zxpgO/s320/d%20(1).png" alt="Logo">
   <h3>Creating a multimodal chatbot based ML application to enable computers to understand and react to emotions.</h3>
 </div>
 
@@ -74,3 +74,4 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 * [Tensorflow - Transfer learning and fine-tuning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 * [Extended Cohn-Kanade Dataset (CK+)](https://sites.pitt.edu/~jeffcohn/CVPR2010_CK%2B2.pdf)
+---------------------------------------
