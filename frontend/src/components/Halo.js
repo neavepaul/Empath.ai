@@ -13,8 +13,6 @@ export default class Halo extends React.Component {
       touchControls: true,
       gyroControls: false,
       size: 1.5,
-      minHeight: 300.0,
-      minWidth: 600.0,
       backgroundColor: 0x171518,
       baseColor: 0xff,
       xOffset: 0.25,
