@@ -46,16 +46,16 @@ command to run if program contains helper info
 ## Authors
 
 ### **Neave Paul** <br>
-<a href="https://www.linkedin.com/in/neavepaul/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a>  
+<a href="https://www.linkedin.com/in/neavepaul/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a><a href="https://github.com/neavepaul"><img src="https://img.icons8.com/color-glass/48/null/github--v1.png" width=40></a>  
 
 ### **Afif Deshmukh** <br>
-<a href="https://www.linkedin.com/in/afieif/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a>
+<a href="https://www.linkedin.com/in/afieif/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a><a href="https://github.com/afieif"><img src="https://img.icons8.com/color-glass/48/null/github--v1.png" width=40></a>  
 
 ### **Kyle Dsouza** <br>
-<a href="https://www.linkedin.com/in/kyle-dsouza-650291212/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a>
+<a href="https://www.linkedin.com/in/kyle-dsouza-650291212/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a><a href="https://github.com/KyleBird02"><img src="https://img.icons8.com/color-glass/48/null/github--v1.png" width=40></a>  
 
 ### **Chinmay Kadam** <br>
-<a href="https://www.linkedin.com/in/chinmay-kadam-729990213/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a>
+<a href="https://www.linkedin.com/in/chinmay-kadam-729990213/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width=40></a><a href="https://github.com/ChinmayKadam172"><img src="https://img.icons8.com/color-glass/48/null/github--v1.png" width=40></a>  
 
 <!-- 
 ## Version History
@@ -69,9 +69,3 @@ command to run if program contains helper info
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details -->
----------------------------------------
-## Acknowledgments
-
-* [Tensorflow - Transfer learning and fine-tuning](https://www.tensorflow.org/tutorials/images/transfer_learning)
-* [Extended Cohn-Kanade Dataset (CK+)](https://sites.pitt.edu/~jeffcohn/CVPR2010_CK%2B2.pdf)
----------------------------------------
