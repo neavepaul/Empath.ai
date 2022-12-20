@@ -1,10 +1,10 @@
-import React from 'react'
-import HALO from 'vanta/dist/vanta.halo.min'
+import React from "react";
+import HALO from "vanta/dist/vanta.halo.min";
 
 export default class Halo extends React.Component {
   constructor() {
-    super()
-    this.vantaRef = React.createRef()
+    super();
+    this.vantaRef = React.createRef();
   }
   componentDidMount() {
     this.vantaEffect = HALO({
@@ -13,17 +13,17 @@ export default class Halo extends React.Component {
       touchControls: true,
       gyroControls: false,
       size: 1.5,
-      minHeight: 300.00,
-      minWidth: 600.00,
+      minHeight: 300.0,
+      minWidth: 600.0,
       backgroundColor: 0x171518,
       baseColor: 0xff,
-
-    })
+      xOffset: 0.25,
+    });
   }
   componentWillUnmount() {
-    if (this.vantaEffect) this.vantaEffect.destroy()
+    if (this.vantaEffect) this.vantaEffect.destroy();
   }
   render() {
-    return <div ref={this.vantaRef} className="halo-box"></div>
+    return <div ref={this.vantaRef} className="halo-box"></div>;
   }
 }
