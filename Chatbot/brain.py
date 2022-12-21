@@ -48,7 +48,7 @@ def chat():
         if results[results_index] > 0.7:
             label = labels[results_index]
             
-            if label == "jokes":
+            if label == "smalltalk.agent.jokes":
                 joke()
             else:
                 for tg in data["intents"]:
