@@ -7,6 +7,9 @@ API_KEY = os.getenv('API_KEY')
 
 
 def joke():
+    if not API_KEY: 
+        print("API_KEY ERROR") 
+        return
     url = "https://dad-jokes.p.rapidapi.com/random/joke"
 
     headers = {
