@@ -8,7 +8,7 @@ from nlpUtils import bag_of_words
 from tensorflow.python.framework import ops
 
 
-with open("intents.json") as file:
+with open("intents/intentsNeutral.json") as file:
     data = json.load(file)
 
 try:

@@ -1,0 +1,19 @@
+{
+	"intents": [
+		{
+			"tag": "general",
+			"patterns": [
+				"I'm feeling happy",
+				"I'm feeling great",
+				"I'm feeling wonderful",
+				"I'm feeling fantastic"
+			],
+			"responses": [
+				"I'm glad to hear that you're feeling happy! Is there anything specific that is causing you to feel this way?",
+				"It's always good to hear when someone is feeling happy. Is there anything in particular that is making you feel this way?",
+				"Happiness is contagious! Is there anything you would like to share about why you're feeling happy?",
+				"It sounds like you're having a good day. Is there anything you'd like to tell me about it?"
+			]
+		}
+	]
+}
