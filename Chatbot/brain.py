@@ -8,11 +8,11 @@ from nlpUtils import bag_of_words
 from tensorflow.python.framework import ops
 
 
-with open("intents.json") as file:
+with open("intents/sad.json") as file:
     data = json.load(file)
 
 try:
-    with open("assets/data.pickle", "rb") as f:
+    with open("assets/sad/data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
 except:
     print("Have you tried running the data loader?")
@@ -28,7 +28,7 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 try:
-    model.load("assets/model.tflearn")
+    model.load("assets/sad/model.tflearn")
     print("MODEL LOADED AND READY TO GO")
 except:
     print("Have you tried training the model?")

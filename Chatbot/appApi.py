@@ -5,8 +5,8 @@ from brain import chat
 app = Flask(__name__)
 
 @app.route('/')
-def helo():
-  return '<h1>helo</h1>'
+def home():
+  return '<h1>Welcome to Empath.ai</h1>'
 
 @app.route('/api')
 def api():
