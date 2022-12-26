@@ -6,3 +6,4 @@ nltk
 json
 os
 dotenv
+flask
