@@ -8,7 +8,7 @@ from nlpUtils import bag_of_words
 from tensorflow.python.framework import ops
 
 
-with open("intents/intentsNeutral.json") as file:
+with open("intents.json") as file:
     data = json.load(file)
 
 try:
@@ -35,27 +35,26 @@ except:
     exit()
 
 
-def chat():
+def chat(inp):
     print("Start talking with the bot (type quit to stop)!")
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            break
+    inp = inp['request']
+    if inp.lower() == "quit":
+        return
 
-        results = model.predict([bag_of_words(inp, words)])[0]
-        results_index = numpy.argmax(results)
+    results = model.predict([bag_of_words(inp, words)])[0]
+    results_index = numpy.argmax(results)
 
-        if results[results_index] > 0.7:
-            label = labels[results_index]
-            
-            if label == "smalltalk.agent.jokes":
-                joke()
-            else:
-                for tg in data["intents"]:
-                    if tg['tag'] == label:
-                        responses = tg['responses']
-
-                print(random.choice(responses))
+    if results[results_index] > 0.7:
+        label = labels[results_index]
+        
+        if label == "smalltalk.agent.jokes":
+            joke()
         else:
-            print(random.choice(data["intents"][0]["responses"]))
-chat()
+            for tg in data["intents"]:
+                if tg['tag'] == label:
+                    responses = tg['responses']
+
+            return(random.choice(responses))
+    else:
+        return(random.choice(data["intents"][0]["responses"]))
+
