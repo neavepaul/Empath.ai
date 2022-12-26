@@ -2,7 +2,5 @@ numpy
 tflearn
 tensorflow
 nltk
-json
-os
 dotenv
 flask
