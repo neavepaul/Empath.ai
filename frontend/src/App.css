@@ -323,3 +323,47 @@ a:hover {
     margin: auto;
   }
 }
+
+
+/* Chat */
+
+.chat-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 80vh;
+}
+
+.message{
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.bot-message{
+  background-color: #fff;
+  color: #171518;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.user-message{
+  background-color: #4285f4;
+  color: white;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.chat-box{
+  color: #171518;
+  width: 85vw;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
