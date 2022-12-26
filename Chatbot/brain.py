@@ -3,7 +3,6 @@ import tflearn
 import random
 import json
 import pickle
-from ExFuncUtils import joke
 from nlpUtils import bag_of_words
 from tensorflow.python.framework import ops
 
@@ -46,15 +45,12 @@ def chat(inp):
 
     if results[results_index] > 0.7:
         label = labels[results_index]
-        
-        if label == "smalltalk.agent.jokes":
-            joke()
-        else:
-            for tg in data["intents"]:
-                if tg['tag'] == label:
-                    responses = tg['responses']
+    
+        for tg in data["intents"]:
+            if tg['tag'] == label:
+                responses = tg['responses']
 
-            return(random.choice(responses))
+        return(random.choice(responses))
     else:
         return(random.choice(data["intents"][0]["responses"]))
 
