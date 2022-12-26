@@ -1,6 +1,5 @@
 numpy
 tflearn
-pickle
 tensorflow
 nltk
 json
