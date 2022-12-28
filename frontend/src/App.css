@@ -333,8 +333,8 @@ a:hover {
 }
 
 .chat-area {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
     padding: 15px;
     height: 73vh;
     overflow-y: "scroll";
@@ -389,3 +389,7 @@ a:hover {
     overflow-y: "scroll";
     height: "30vh";
 } */
+
+.logo-placer {
+    margin-top: 10px;
+}

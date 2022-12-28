@@ -38,13 +38,14 @@ export default function Chat() {
         <div className="body">
             <nav>
                 <div className="logo">
-                    Empath.<span className="blue-text">AI</span>
+                    <img
+                        className="logo-placer"
+                        src="https://camo.githubusercontent.com/256384c2b9fe6118cb4287d4423c10c0d92e218e298335e7a7ab3540f8d1c6b1/68747470733a2f2f626c6f676765722e676f6f676c6575736572636f6e74656e742e636f6d2f696d672f622f523239765a32786c2f415676587345694e303450594a6f6e794a3769784c436166795136614d6e4661566f372d51306c696330537a756f65756c4953443542566b33567471794e55344d37797232774b6e794e7532676c67776d36465644686c6d4d4f59747956625074695736504d54653536353150565155706b445256697764384c546f31524d5f5568326377553351582d566b304a5547504146435f5f774846736a725130376b3157577a326656583636683062684f6133453533513632587a4c327a7870674f2f733332302f642532302831292e706e67"
+                        alt="empath.ai logo"
+                        height="36px"
+                        onClick={() => navigate("/")}
+                    ></img>
                 </div>
-                <ul className="nav-list">
-                    <li className="nav-list-item">
-                        <a href="#home">Home</a>
-                    </li>
-                </ul>
             </nav>
             <div className="chat-area">
                 <ReactScrollableFeed className="scroll-space">
