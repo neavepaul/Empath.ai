@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import ReactScrollableFeed from "react-scrollable-feed";
 
 export default function Chat() {
+    const navigate = useNavigate();
     const [history, setHistory] = useState([
         { type: "bot", content: "Hi , my name is Empath" },
     ]);
@@ -34,6 +36,16 @@ export default function Chat() {
 
     return (
         <div className="body">
+            <nav>
+                <div className="logo">
+                    Empath.<span className="blue-text">AI</span>
+                </div>
+                <ul className="nav-list">
+                    <li className="nav-list-item">
+                        <a href="#home">Home</a>
+                    </li>
+                </ul>
+            </nav>
             <div className="chat-area">
                 <ReactScrollableFeed className="scroll-space">
                     {history.map((msg) => {
