@@ -89,7 +89,7 @@ export default function HomeScreen() {
                         <article class="card">
                             <a
                                 href="https://www.linkedin.com/in/KyleDsouza02/"
-                                target="_blank"
+                                // target="_blank"
                             >
                                 <img
                                     src={require("../assets/kyle.jpeg")}
@@ -104,7 +104,7 @@ export default function HomeScreen() {
                         <article class="card">
                             <a
                                 href="https://www.linkedin.com/in/neavepaul/"
-                                target="_blank"
+                                // target="_blank"
                             >
                                 <img
                                     src={require("../assets/neave1.jpeg")}
@@ -119,11 +119,12 @@ export default function HomeScreen() {
                         <article class="card">
                             <a
                                 href="https://www.linkedin.com/in/afieif/"
-                                target="_blank"
+                                // target="_blank"
                             >
                                 <img
                                     src={require("../assets/afif.jpeg")}
                                     class="cardImg"
+                                    alt="JS Chad"
                                 />
                             </a>
                             <h5>
@@ -133,11 +134,12 @@ export default function HomeScreen() {
                         <article class="card">
                             <a
                                 href="https://www.linkedin.com/in/chinmay-kadam-729990213"
-                                target="_blank"
+                                // target="_blank"
                             >
                                 <img
                                     src={require("../assets/chinmay.jpeg")}
                                     class="cardImg"
+                                    alt="Vroom Vroom"
                                 />
                             </a>
                             <h5>
