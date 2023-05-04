@@ -116,7 +116,7 @@ a:hover {
 .halo-box {
     right: 0px;
     width: 100vw;
-    height: 88vh;
+    height: 600px;
 }
 
 .about-us {
@@ -145,8 +145,8 @@ a:hover {
 
 .emotion-header {
     font-family: "Poppins";
-    margin-top: 8%;
-    font-size: 60px;
+    margin-top: 5%;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,6 +299,11 @@ a:hover {
     display: flex;
     padding: 10px 10px;
 }
+
+.face-img {
+    height: 350px;
+}
+
 @media screen and (max-width: 480px) {
     .cards {
         display: flex;
@@ -322,74 +327,4 @@ a:hover {
     .gallery {
         margin: auto;
     }
-}
-
-/* Chat */
-
-.scroll-space {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.chat-area {
-    margin-left: 90px;
-    margin-right: 90px;
-    padding: 15px;
-    height: 73vh;
-    overflow-y: "scroll";
-}
-
-.message {
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 16px;
-    min-height: 20px;
-}
-
-.bot-message {
-    background-color: #fff;
-    color: #171518;
-    width: fit-content;
-    height: fit-content;
-    align-self: flex-start;
-    text-align: left;
-}
-
-.user-message {
-    background-color: #4285f4;
-    color: white;
-    width: fit-content;
-    height: fit-content;
-    align-self: flex-end;
-    text-align: end;
-}
-
-.chat-box {
-    color: #171518;
-    width: 85vw;
-    padding: 15px 10px;
-    border-radius: 10px;
-    border: none;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    bottom: 0px;
-}
-
-/* .chat-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    overflow-y: "scroll";
-    height: "30vh";
-} */
-
-.logo-placer {
-    margin-top: 10px;
 }

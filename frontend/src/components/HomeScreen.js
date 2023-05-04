@@ -32,15 +32,15 @@ export default function HomeScreen() {
                                 Our <span className="blue-text">Team</span>
                             </a>
                         </li>
-                        <li className="nav-list-item">
+                        {/* <li className="nav-list-item">
                             <a href="/chat">
                                 Empath <span className="blue-text">Chat</span>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                     <button
                         className="sign-in-btn blue-text"
-                        onClick={() => navigate("/face")}
+                        onClick={() => navigate("/audio")}
                     >
                         Try it
                     </button>

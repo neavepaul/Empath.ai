@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import ReactScrollableFeed from "react-scrollable-feed";
@@ -77,3 +77,4 @@ export default function Chat() {
 // i used for scroll works with a older react
 // -> npm config set legacy-peer-deps true
 // then npm i as usual
+ */
