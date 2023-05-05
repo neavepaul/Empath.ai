@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from transformers import pipeline, Conversation
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/chat/*": {"origins": "*"}})
 
 # Load the emotion classifier model
 classifier = pipeline(
