@@ -1,9 +1,9 @@
-import base64
 from flask import Flask, request, jsonify
 import numpy as np
 import librosa
 from keras.models import load_model
 import io
+import requests
 
 app = Flask(__name__)
 
@@ -29,10 +29,8 @@ DURATION = 2
 
 
 def classify_wav(wav_data):
-    data = base64.b64decode(wav_data)
-    print("AUDIO DECODED")
     # Convert base64-encoded WAV data to numpy array
-    with io.BytesIO(data) as wav_file:
+    with io.BytesIO(wav_data) as wav_file:
         print("io Bytes file open")
         signal, _ = librosa.load(wav_file, sr=SAMPLE_RATE, duration=DURATION)
         print("AUDIO LOADED")
@@ -65,8 +63,11 @@ def classify_wav(wav_data):
 
 @app.route('/classify', methods=['POST'])
 def classify():
-    print("AUDIO RECIEVED")
-    wav_data = request.json['wav_data']
+    print("API CALLED")
+    wav_link = request.json['wav_url']
+    response = requests.get(wav_link)
+    wav_data = response.content
+    print("FILE DOWNLOADED")
     predicted_dist = classify_wav(wav_data)
     print("MAIN FUNCTION GOT THE PREDS AND IS SENDING")
     return jsonify(predicted_dist.tolist())
