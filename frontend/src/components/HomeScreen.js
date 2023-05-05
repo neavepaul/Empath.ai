@@ -40,7 +40,7 @@ export default function HomeScreen() {
                     </ul>
                     <button
                         className="sign-in-btn blue-text"
-                        onClick={() => navigate("/audio")}
+                        onClick={() => navigate("/nav")}
                     >
                         Try it
                     </button>

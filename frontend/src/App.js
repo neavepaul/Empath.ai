@@ -6,6 +6,7 @@ import Face from "./components/Face";
 import HomeScreen from "./components/HomeScreen";
 import Chat from "./components/Chat";
 import Audio from "./components/Audio";
+import Navigation from "./components/Navigation";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/face" element={<Face />} />
                     <Route path="/chat" element={<Chat />} />
                     <Route path="/audio" element={<Audio />} />
+                    <Route path="/nav" element={<Navigation />} />
                 </Routes>
             </BrowserRouter>
         </div>
