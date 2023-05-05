@@ -4,8 +4,10 @@ import librosa
 from keras.models import load_model
 import io
 import requests
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/classify/*": {"origins": "*"}})
 
 # Define mapping from string labels to integer labels
 int_to_label = {
