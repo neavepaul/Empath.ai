@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: white;
+  /* color: white; */
   scroll-behavior: smooth;
 }
 
@@ -159,6 +159,7 @@ a:hover {
 
 .emotion {
   text-transform: capitalize;
+  color: white;
 }
 
 .alert {
@@ -320,14 +321,105 @@ a:hover {
   margin: 30px;
 }
 
-.nav-header{
-    margin-bottom: 10px;
+.nav-header {
+  margin-bottom: 10px;
 }
 
-.nav-btn{
-    width: 20vw;
+.nav-btn {
+  width: 20vw;
 }
 
+.chat-header {
+  background-color: #171518;
+  position: sticky;
+}
+
+.chat-screen {
+  height: 85vh;
+}
+
+
+.user {
+  float: right;
+  margin-right: 2%;
+}
+
+.bot {
+  margin-left: 2%;
+  margin-left: 20px;
+  border-radius: 0 4px 4px 4px;
+  &:after {
+    border-width: 0 20px 20px * 1.2 0;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-bottom-color: transparent !important;
+    left: -20px;
+  }
+}
+
+.user {
+  margin-right: 20px;
+  border-radius: 4px 0 4px 4px;
+  &:after {
+    border-width: 0 0 20px * 1.2 20px;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    right: -20px;
+  }
+}
+
+.message {
+  max-width: 40vw;
+  min-width: 10vw;
+  background-color: #4285f4;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-family: "Poppins";
+}
+
+.chat-box {
+  background-color: #232423;
+  width: 90vw;
+  height: 8vh;
+  align-items: end;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Poppins";
+  border: 0px;
+  color: white;
+}
+.center {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 5%;
+}
+
+.footer {
+  width: 100vw;
+}
+
+.chat-area {
+  max-height: 80vh;
+}
+
+.user-message{
+    margin-right: 20px;
+}
+
+.bot-message {
+  padding-top: 0px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.nametag {
+  margin-bottom: 8px;
+  font-weight: 800;
+}
 
 @media screen and (max-width: 480px) {
   .cards {
